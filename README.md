@@ -16,8 +16,7 @@ Thats all
 ### Some Instructions:
 
 -------
-If yo wanna use notebooks:
-run:
+If yo wanna use notebooks run:
 `kedro run jupyter notebook` or `kedro run jupyter lab`
 The connect to kernel and put your toke from you favorite IDE, else, use it directly from web.
 
@@ -27,7 +26,9 @@ If you wanna make a commit, please first run:
 `make lint`
 
 ---------
+Sometime syou need to close a notebook before run pre-commit and make push due a auto jump line generated
 
+---
 Remember: No pipeline is implemented yet
 
 
