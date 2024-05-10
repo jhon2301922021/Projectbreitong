@@ -1,53 +1,34 @@
-# Reto Integrativo - Desafío BREIT
+# beating PERUCHAMPS
 
-## Objetivos
+## Setup:
 
-- Aplicar conocimientos y habilidades técnicas y no técnicas en un problema social real.
-- Co-diseñar soluciones aplicando analítica de datos junto a organizaciones sociales.
+First install [chocolatey](https://chocolatey.org/install)
+Then run `choco install make`
+when all is installed, open a command prompt in the root folder and run the following command tasks:
+* `make install` <- It will create an env called _breitong_ using the requeriments.txt file and install [pre-commit](https://pre-commit.com)
+* `conda activate breitong`
 
-## Key Players
-
-- **Estudiantes:** Aplican conocimientos y habilidades para maximizar el impacto del proyecto.
-- **Organizaciones sociales:** Facilitan datos e información y participan en el diseño y validación de soluciones.
-- **Mentores:** Data Scientists que acompañan a los equipos durante el desafío.
-- **Expertos y equipos MIT IDSS y Breit:** Proporcionan soporte técnico y facilitan la comunicación y el cumplimiento de compromisos.
-
-## Beneficios
-
-- **Para la organización:** Acceso a soluciones relevantes y reconocimiento del valor de los datos en la organización.
-- **Para el equipo de estudiantes:** Experiencia práctica en gestión y desarrollo de proyectos analíticos, mejora de habilidades de comunicación y negociación, y contribución al desarrollo social.
-
-## Fases y Fechas Clave
-
-### Fase de Ideación (16 de marzo - 19 de agosto)
-
-- **16 de marzo - 19 de agosto:** Desarrollo de posibles soluciones tras la revisión de datos.
-- **Hitos importantes:**
-  - **18 de marzo:** Reunión inicial con ONG.
-  - **25 de marzo - 6 de mayo:** Diversas reuniones de consulta, aprobación y presentación de avances.
-
-### Fase de Desarrollo (20 de mayo - Noviembre)
-
-- **20 de mayo - Noviembre:** Ejecución de la solución seleccionada y planificación detallada del proyecto.
-- **Hitos importantes:**
-  - **13 de mayo - 8 de julio:** Lanzamiento y presentaciones de avances del desarrollo de la solución.
-  - **15 de julio - 19 de agosto:** Presentación de MVP y reuniones de avance.
-
-### Fase de Transferencia (Noviembre - 15 de diciembre)
-
-- **Noviembre - 15 de diciembre:** Traspaso de la solución a la organización.
-- **Hitos importantes:**
-  - **11 de noviembre - 19 de diciembre:** Checkpoints y reuniones de transferencia.
-
-## Soporte en el Proyecto
-
-- Soporte constante durante el proyecto para asegurar el aprendizaje y logro de objetivos.
-- Entregables en diversas etapas para documentar el progreso.
-
-## Anexos
-
-- Detalles sobre la formulación del problema, recolección de datos, metodología, experimentos, interpretación de resultados y producto de ingeniería.
-- Rúbricas de evaluación para cada etapa del proyecto.
+__If you are using a new library, pleas do not forget add it to requeriments.txt__
 
 
-![nya uwu](https://media.tenor.com/N5fU8iyU9F4AAAAj/shigure-ui-dance.gif)
+Thats all
+
+### Some Instructions:
+
+-------
+If yo wanna use notebooks:
+run:
+`kedro run jupyter notebook` or `kedro run jupyter lab`
+The connect to kernel and put your toke from you favorite IDE, else, use it directly from web.
+
+--------
+
+If you wanna make a commit, please first run:
+`make lint`
+
+---------
+
+Remember: No pipeline is implemented yet
+
+
+![lalalala](https://i.pinimg.com/originals/a2/25/af/a225af917c429eab61d02bf2d3a3136b.gif)
