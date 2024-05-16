@@ -39,6 +39,38 @@
 # (transcoding), templating and a way to reuse arguments that are frequently repeated. See more here:
 # https://kedro.readthedocs.io/en/stable/data/data_catalog.html
 
-main_data:
+grades_2023:
   type: pandas.ExcelDataset
   filepath: data/01_raw/data.xlsx
+  load_args:
+    sheet_name: Promedio de notas 2023
+
+grades_2022:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/data.xlsx
+  load_args:
+    sheet_name: Promedio de notas 2022
+
+grades_2021:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/data.xlsx
+  load_args:
+    sheet_name: Promedio de notas 2021
+
+grades_2020:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/data.xlsx
+  load_args:
+    sheet_name: Promedio de notas 2020
+
+grades_2019:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/data.xlsx
+  load_args:
+    sheet_name: Promedio de notas 2019
+
+grades_2018:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/data.xlsx
+  load_args:
+    sheet_name: Promedio de notas 2018
