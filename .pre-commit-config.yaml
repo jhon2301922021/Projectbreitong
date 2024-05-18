@@ -4,29 +4,33 @@ repos:
     rev: v4.4.0
     hooks:
       - id: check-toml
+        exclude: '(\.ipynb$|data/09_dictionary)'
       - id: end-of-file-fixer
+        exclude: '(\.ipynb$|data/09_dictionary)'
       - id: trailing-whitespace
+        exclude: '(\.ipynb$|data/09_dictionary)'
 
   - repo: https://github.com/PyCQA/autoflake
     rev: v2.1.1
     hooks:
       - id: autoflake
         args: ["--expand-star-imports", "--ignore-init-module-imports"]
+        exclude: '(\.ipynb$|data/09_dictionary)'
 
   - repo: https://github.com/PyCQA/isort
     rev: 5.12.0
     hooks:
       - id: isort
-        exclude: ^.azuredevops/databricks
+        exclude: '(\.ipynb$|^.azuredevops/databricks|data/09_dictionary)'
 
   - repo: https://github.com/kynan/nbstripout
     rev: 0.6.1
     hooks:
       - id: nbstripout
-
+        exclude: '(\.ipynb$|data/09_dictionary)'
 
   - repo: https://github.com/pycqa/flake8
     rev: 6.1.0
     hooks:
       - id: flake8
-        exclude: ^.azuredevops/databricks
+        exclude: '(\.ipynb$|^.azuredevops/databricks|data/09_dictionary)'
