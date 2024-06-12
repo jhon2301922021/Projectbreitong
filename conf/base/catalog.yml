@@ -74,3 +74,35 @@ grades_2018:
   filepath: data/01_raw/data.xlsx
   load_args:
     sheet_name: Promedio de notas 2018
+
+champions:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/total_data.xlsx
+  load_args:
+    sheet_name: BD CHAMPS 2024
+
+questionnaire:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/total_data.xlsx
+  load_args:
+    sheet_name: Cuestionario de Renovación 2024
+
+leadership:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/total_data.xlsx
+  load_args:
+    sheet_name: Liderazgo & Consultoría 2024
+
+primary_psycho:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/total_data.xlsx
+  load_args:
+    sheet_name: Evaluación psicológica primaria
+    skiprows: 1
+
+secondary_psycho:
+  type: pandas.ExcelDataset
+  filepath: data/01_raw/total_data.xlsx
+  load_args:
+    sheet_name: Evaluación psicológica secundar
+    skiprows: 1

@@ -17,3 +17,5 @@ scipy==1.10.1
 ydata-profiling-4.8.3
 plotly==5.22.0
 shutup-0.2.0
+vaderSentiment
+vader-multi
