@@ -93,12 +93,20 @@ leadership:
   load_args:
     sheet_name: Liderazgo & Consultoría 2024
 
+questionnaire_sense:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/df_questionnaires_sense.csv
+
+leadership_sense:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/df_leadership_sense.csv
+
 primary_psycho:
   type: pandas.ExcelDataset
   filepath: data/01_raw/total_data.xlsx
   load_args:
     sheet_name: Evaluación psicológica primaria
-    skiprows: 1
+    skiprows: 2
 
 secondary_psycho:
   type: pandas.ExcelDataset
